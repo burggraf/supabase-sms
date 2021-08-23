@@ -17,5 +17,7 @@ Send and receive sms messages from Supabase / PostgreSQL using a Transactional S
 ## Setup for SMS Providers:
 
 See: [Twilio Setup](./SMS_Providers/Twilio.md)
+
 See: [SignalWire Setup](./SMS_Providers/SignalWire.md)
+
 See: [Nexmo Setup](./SMS_Providers/Nexmo.md) / Vonage
