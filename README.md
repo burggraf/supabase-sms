@@ -6,7 +6,7 @@ Send and receive sms messages from Supabase / PostgreSQL using a Transactional S
   - [Twilio](https://twilio.com)
   - [SignalWire](https://signalwire.com)
   - [Nexmo](https://dashboard.nexmo.com) / Vonage
-- Create and store an outgoing sms messages in a PostgreSQL table
+- Create and store a outgoing sms messages in a PostgreSQL table
 
 ## Requirements
 - Supabase account (free tier is fine)
