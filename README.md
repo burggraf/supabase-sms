@@ -5,7 +5,6 @@ Send and receive sms messages from Supabase / PostgreSQL using a Transactional S
 - Send an SMS message using the API of a Transactional SMS Provider 
   - [Twilio](https://twilio.com)
 - Create and store an outgoing sms messages in a PostgreSQL table
-- Send an `sms` from the `sms_messages` table using the API of your selected sms provider
 - Other providers coming soon...
 
 ## Requirements

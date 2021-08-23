@@ -13,7 +13,7 @@
  *   [PROVIDER]_SENDER_NUMBER
  ************************************************************/
 CREATE EXTENSION IF NOT EXISTS HTTP;
-drop function send_sms_message;
+-- drop function send_sms_message;
 CREATE OR REPLACE FUNCTION public.send_sms_message (message JSONB)
   RETURNS json
   LANGUAGE plpgsql
