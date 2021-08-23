@@ -36,7 +36,7 @@ BEGIN
   IF message->'messageid' IS NULL AND (SELECT to_regclass('public.sms_messages')) IS NOT NULL THEN
     -- messages table exists, so save this message in the messages table
     INSERT INTO public.sms_messages(recipient, sender, body, status, log)
-    VALUES (message->'recipient', message->'sender', message->'body', 'ready', '[]'::jsonb) RETURNING id INTO messageid;
+    VALUES (message->>'recipient', message->>'sender', message->>'body', 'ready', '[]'::jsonb) RETURNING id INTO messageid;
     select message || jsonb_build_object('messageid',messageid) into message;
   END IF;
 

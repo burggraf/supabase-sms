@@ -41,7 +41,7 @@ BEGIN
 
       IF  (SELECT to_regclass('public.sms_messages')) IS NOT NULL AND 
           retval::text = '201' THEN
-        UPDATE public.sms_messages SET status = 'queued' WHERE id = (message->>'messageid')::UUID;
+        UPDATE public.sms_messages SET status = 'queued', sender = TWILIO_SENDER_NUMBER WHERE id = (message->>'messageid')::UUID;
       END IF;
 
   RETURN retval;
