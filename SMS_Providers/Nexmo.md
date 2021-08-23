@@ -51,7 +51,7 @@ select send_sms_message('{
 
 If you've got everything setup correctly, you'll get a JSON object back with the Provider's response, such as:
 ```
-201
+200
 ```
 
 At this point, you have everything you need to send messages.  If you want to track your sms messages, read on.
