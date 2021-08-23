@@ -23,7 +23,7 @@ CREATE OR REPLACE FUNCTION public.send_sms_message (message JSONB)
   AS $$
 DECLARE
   -- variable declaration
-  sms_provider text := 'twilio'; -- 'twilio'
+  sms_provider text := 'twilio'; -- 'twilio', 'signalwire'
   retval json;
   messageid text;
 BEGIN
