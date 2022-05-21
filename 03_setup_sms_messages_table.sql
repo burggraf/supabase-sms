@@ -16,8 +16,8 @@ CREATE TABLE if not exists public.sms_messages
 );
 ALTER TABLE public.sms_messages OWNER TO supabase_admin;
 ALTER TABLE public.sms_messages ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "sms_messages delete policy" ON public.messages FOR DELETE USING (false);
-CREATE POLICY "sms_messages insert policy" ON public.messages FOR INSERT WITH CHECK (false);
-CREATE POLICY "sms_messages select policy" ON public.messages FOR SELECT USING (false);
-CREATE POLICY "sms_messages update policy" ON public.messages FOR UPDATE USING (false) WITH CHECK (false);
+CREATE POLICY "sms_messages delete policy" ON public.sms_messages FOR DELETE USING (false);
+CREATE POLICY "sms_messages insert policy" ON public.sms_messages FOR INSERT WITH CHECK (false);
+CREATE POLICY "sms_messages select policy" ON public.sms_messages FOR SELECT USING (false);
+CREATE POLICY "sms_messages update policy" ON public.sms_messages FOR UPDATE USING (false) WITH CHECK (false);
 
